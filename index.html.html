@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Akshata Kamble | Cloud & DevOps Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f6fa;--surface:#fff;--ink:#0f1c2e;--muted:#51607a;--line:#d8e0ec;--accent:#1d4ed8;--accent-ink:#fff;--soft:#e6edfb;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1220;--surface:#121c30;--ink:#e8eefb;--muted:#9fb0cc;--line:#243350;--accent:#7db4ff;--accent-ink:#0a2540;--soft:#182640}}
+:root[data-theme="dark"]{--bg:#0b1220;--surface:#121c30;--ink:#e8eefb;--muted:#9fb0cc;--line:#243350;--accent:#7db4ff;--accent-ink:#0a2540;--soft:#182640}
+html{scroll-padding-top:4rem;scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1rem/1.65 "Public Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","Public Sans",system-ui,sans-serif;line-height:1.15;margin:0}
+a{color:var(--accent)}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:960px;margin:0 auto;padding:0 1.25rem}
+nav{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;gap:1.25rem;align-items:center;padding-top:.8rem;padding-bottom:.8rem;overflow-x:auto;white-space:nowrap}
+nav b{font-family:"Bricolage Grotesque",sans-serif;margin-right:auto}
+nav a{color:var(--muted);text-decoration:none;font-weight:500;font-size:.95rem}
+nav a:hover{color:var(--accent)}
+.hero{background:linear-gradient(135deg,#071a30 0%,#0a2540 55%,#103a6b 100%);color:#eaf1fb;padding:4rem 0 3.5rem}
+.hero .wrap{display:grid;grid-template-columns:1fr;gap:2.5rem}
+.hero h1{font-size:clamp(2.2rem,6vw,3.7rem);font-weight:700;max-width:17ch}
+.hero .lead{max-width:56ch;color:#b9c8dc;font-size:1.125rem;margin:1.25rem 0 1.75rem}
+.btns{display:flex;gap:.75rem;flex-wrap:wrap}
+.btn{display:inline-block;padding:.7rem 1.2rem;border-radius:6px;font-weight:600;text-decoration:none;border:2px solid #7db4ff;color:#7db4ff}
+.btn.main{background:#f5a524;border-color:#f5a524;color:#0a2540}
+.pipe{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;font-weight:500;font-size:.9rem}
+.pipe span{background:#12365f;padding:.4rem .8rem;border-radius:4px;opacity:.35;animation:lit .5s forwards}
+.pipe span:nth-child(1){animation-delay:.3s}.pipe span:nth-child(3){animation-delay:.9s}.pipe span:nth-child(5){animation-delay:1.5s}.pipe span:nth-child(7){animation-delay:2.1s}.pipe span:nth-child(9){animation-delay:2.7s}
+.pipe i{color:#7db4ff;font-style:normal}
+@keyframes lit{to{opacity:1;background:#1e4f8f}}
+@media (prefers-reduced-motion:reduce){.pipe span{animation:none;opacity:1}}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem;margin:-1.75rem auto 0;position:relative}
+.fact{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:1rem 1.1rem}
+.fact b{display:block;font-family:"Bricolage Grotesque",sans-serif;font-size:1.15rem}
+.fact span{color:var(--muted);font-size:.9rem}
+section{padding:3rem 0 .5rem}
+h2{font-size:1.8rem;margin-bottom:.4rem}
+.sub{color:var(--muted);max-width:60ch;margin:0 0 1.75rem}
+.proj{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:1.5rem}
+.proj h3{font-size:1.35rem}
+.tag{display:inline-block;font-size:.8rem;font-weight:600;background:var(--soft);padding:.15rem .6rem;border-radius:99px;margin-left:.5rem;vertical-align:middle}
+.diag{display:flex;flex-wrap:wrap;gap:.4rem;align-items:center;background:var(--soft);padding:.8rem;border-radius:8px;margin:1rem 0;font-size:.85rem;font-weight:500}
+.diag span{background:var(--surface);border:1px solid var(--line);padding:.3rem .65rem;border-radius:4px}
+.diag i{color:var(--accent);font-style:normal}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.25rem}
+.cols h4{margin:0 0 .3rem;font-size:1rem}
+.cols p,.cols ul{margin:0;color:var(--muted);font-size:.95rem}
+.cols ul{padding-left:1.1rem}
+.chips{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1rem}
+.chips span{font-size:.8rem;font-weight:600;border:1px solid var(--accent);color:var(--accent);padding:.15rem .6rem;border-radius:99px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:1.1rem 1.2rem}
+.card h3{font-size:1.05rem;margin-bottom:.3rem}
+.card p{margin:0;color:var(--muted);font-size:.95rem}
+.steps{counter-reset:s;list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem}
+.steps li{counter-increment:s;border-top:4px solid var(--accent);padding-top:.7rem}
+.steps li::before{content:"Step " counter(s);display:block;color:var(--accent);font-weight:600;font-size:.85rem}
+.steps b{display:block;font-family:"Bricolage Grotesque",sans-serif;font-size:1.05rem}
+.steps span{color:var(--muted);font-size:.95rem}
+.cta{background:#0a2540;color:#eaf1fb;border-radius:10px;padding:2rem;margin:3rem 0}
+.cta h2{margin-bottom:.6rem}
+.cta p{margin:.3rem 0;color:#b9c8dc}
+.cta a{color:#7db4ff}
+footer{padding-bottom:2.5rem;color:var(--muted);font-size:.9rem}
+
+h1,h2,h3{letter-spacing:-.015em}
+.role{color:#b9c8dc;font-weight:500;margin:0 0 1rem;font-size:1rem}
+.status{display:flex;align-items:center;gap:.5rem;color:#b9c8dc;font-size:.9rem;margin:0 0 1rem}
+.status i{width:.6rem;height:.6rem;border-radius:50%;background:#34d399;display:inline-block}
+.navcta{background:var(--accent);color:var(--accent-ink)!important;padding:.4rem .9rem;border-radius:6px;font-weight:600!important}
+nav b{margin-right:auto}
+h2{padding-bottom:.6rem;position:relative}
+h2::after{content:"";display:block;width:48px;height:3px;background:var(--accent);margin-top:.6rem;border-radius:2px}
+.cta h2::after{background:#f5a524}
+.proj,.card,.fact{box-shadow:0 1px 2px rgba(10,37,64,.06),0 6px 16px rgba(10,37,64,.05)}
+.proj{border-top:4px solid var(--accent)}
+.about{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;max-width:860px}
+.about p{margin:0;color:var(--muted)}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.75rem;border-top:1px solid var(--line);padding-top:1.25rem}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><b>Akshata Kamble</b><a href="#about">About</a><a href="#work">Projects</a><a href="#services">Services</a><a href="#process">How I work</a><a href="#skills">Skills</a><a class="navcta" href="#contact">Contact me</a></div></nav>
+
+<header class="hero"><div class="wrap">
+<div>
+<p class="role">Akshata Kamble, Cloud and DevOps Engineer</p>
+<h1>I build AWS infrastructure that deploys itself.</h1>
+<p class="lead">Hi, I'm Akshata, a cloud and DevOps freelancer in Pune. I help startups and small businesses move their apps onto AWS with Terraform, Docker, Kubernetes and automated CI/CD pipelines.</p>
+<p class="status"><i></i>Available for freelance projects</p>
+<div class="btns"><a class="btn main" href="mailto:kakshata2000@gmail.com">Hire me</a><a class="btn" href="https://www.linkedin.com/in/akshata-kamble14">LinkedIn</a></div>
+</div>
+<div class="pipe" aria-label="Typical delivery pipeline"><span>Git push</span><i>&gt;</i><span>Build &amp; test</span><i>&gt;</i><span>Security scan</span><i>&gt;</i><span>Docker image</span><i>&gt;</i><span>Live on AWS</span></div>
+</div></header>
+
+<main class="wrap">
+<div class="facts">
+<div class="fact"><b>Pune, India</b><span>Working remotely</span></div>
+<div class="fact"><b>Freelancing since 2026</b><span>Cloud and DevOps projects</span></div>
+<div class="fact"><b>60% smaller images</b><span>From multi-stage Docker builds</span></div>
+<div class="fact"><b>Postgraduate in Computer Applications</b><span>MCA, with a BCA graduate degree</span></div>
+</div>
+
+<section id="about">
+<h2>About me</h2>
+<div class="about">
+<p>I'm a cloud engineer based in Pune with hands-on freelance experience in AWS infrastructure and DevOps automation. I like turning manual, error-prone deployments into pipelines that run the same way every time.</p>
+<p>I work comfortably with both Linux and Windows environments, follow GitOps practices, and write everything as code so clients can see, review and reuse what I build. Postgraduate in Computer Applications, English, Hindi and Marathi speaker.</p>
+</div>
+</section>
+
+<section id="work">
+<h2>Projects</h2>
+<p class="sub">Each project shows the problem, what I built and how it works.</p>
+
+<article class="proj">
+<h3>Blue-green deployments on Amazon EKS</h3>
+<div class="diag"><span>Git</span><i>&gt;</i><span>Jenkins</span><i>&gt;</i><span>Maven + SonarQube</span><i>&gt;</i><span>Nexus</span><i>&gt;</i><span>Trivy scan</span><i>&gt;</i><span>EKS (Terraform)</span></div>
+<div class="cols">
+<div><h4>The problem</h4><p>Releases cause downtime and risky, hand-made changes, and unchecked images can reach production.</p></div>
+<div><h4>What I built</h4><ul><li>EKS cluster and worker nodes created with Terraform.</li><li>Kubernetes RBAC (roles, service accounts, bindings) to restrict what Jenkins can do.</li><li>Multi-stage Jenkins pipeline in Groovy: checkout, build, code analysis, artifact storage, versioned image push.</li></ul></div>
+<div><h4>The result</h4><p>A repeatable environment where new versions go live safely, and only scanned images are deployed.</p></div>
+</div>
+<div class="chips"><span>Terraform</span><span>EKS</span><span>Jenkins</span><span>Trivy</span><span>SonarQube</span><span>Nexus</span><span>Docker</span></div>
+</article>
+
+<article class="proj">
+<h3>Full-stack app deployment: Django and React on EC2</h3>
+<div class="diag"><span>Push to main</span><i>&gt;</i><span>GitHub Actions</span><i>&gt;</i><span>Docker image</span><i>&gt;</i><span>Docker Hub</span><i>&gt;</i><span>EC2 (Terraform)</span></div>
+<div class="cols">
+<div><h4>The problem</h4><p>Deploying a frontend and API by hand is slow and easy to get wrong.</p></div>
+<div><h4>What I built</h4><ul><li>Multi-stage Docker builds for the Django and React apps.</li><li>Terraform for the EC2 instance, VPC, security groups (ports 80, 443, 22) and networking.</li><li>GitHub Actions workflow that builds, pushes and triggers the remote deploy on every push to main.</li><li>Docker Compose to connect the services and manage environment variables.</li></ul></div>
+<div><h4>The result</h4><p>Production images more than 60% smaller, and deployment with no manual steps.</p></div>
+</div>
+<div class="chips"><span>Docker Compose</span><span>Terraform</span><span>GitHub Actions</span><span>EC2</span><span>VPC</span></div>
+</article>
+
+<article class="proj">
+<h3>Multi-environment CI/CD platform on ECS Fargate<span class="tag">In progress</span></h3>
+<div class="diag"><span>Push to develop</span><i>&gt;</i><span>GitHub Actions (OIDC)</span><i>&gt;</i><span>ECR</span><i>&gt;</i><span>ECS Fargate: dev, staging, production</span></div>
+<div class="cols">
+<div><h4>The problem</h4><p>Teams need a safe way to move code from testing to production without storing AWS keys or deploying by hand.</p></div>
+<div><h4>What I'm building</h4><ul><li>Reusable Terraform modules with remote state in S3 and DynamoDB locking.</li><li>Separate dev, staging and production environments behind an Application Load Balancer.</li><li>Keyless GitHub Actions deploys, with a manual approval step before production.</li></ul></div>
+<div><h4>Target result</h4><p>One containerised app that moves through three environments automatically and securely, monitored in CloudWatch.</p></div>
+</div>
+<div class="chips"><span>Terraform modules</span><span>ECS Fargate</span><span>ALB</span><span>ECR</span><span>GitHub Actions</span><span>CloudWatch</span></div>
+</article>
+<article class="proj">
+<h3>End-to-end DevSecOps pipeline on EKS<span class="tag">In progress</span></h3>
+<div class="diag"><span>Code scan</span><i>&gt;</i><span>Image scan (Trivy)</span><i>&gt;</i><span>ECR</span><i>&gt;</i><span>Argo CD</span><i>&gt;</i><span>EKS + Grafana</span></div>
+<div class="cols">
+<div><h4>The problem</h4><p>Security problems are usually found after release, and nobody sees how healthy the app is.</p></div>
+<div><h4>What I'm building</h4><ul><li>Pipeline with SonarQube code analysis and Trivy image scanning that blocks builds with critical issues.</li><li>Helm charts deployed to EKS by Argo CD straight from Git.</li><li>Prometheus and Grafana dashboards, with the EKS cluster created by Terraform.</li></ul></div>
+<div><h4>Target result</h4><p>Every release is scanned, deployed from Git and visible on a dashboard.</p></div>
+</div>
+<div class="chips"><span>EKS</span><span>Terraform</span><span>SonarQube</span><span>Trivy</span><span>Helm</span><span>Argo CD</span><span>Prometheus</span><span>Grafana</span></div>
+</article>
+<article class="proj">
+<h3>AWS cost and security audit toolkit<span class="tag">In progress</span></h3>
+<div class="diag"><span>EventBridge schedule</span><i>&gt;</i><span>Lambda (Python)</span><i>&gt;</i><span>Scan account</span><i>&gt;</i><span>S3 report</span><i>&gt;</i><span>Email via SNS or SES</span></div>
+<div class="cols">
+<div><h4>The problem</h4><p>Small businesses pay for unused resources and leave risky settings open without knowing.</p></div>
+<div><h4>What I'm building</h4><ul><li>Python Lambda that finds unattached EBS volumes, idle Elastic IPs, stopped instances and untagged resources.</li><li>Checks for public S3 buckets and security groups open to the world.</li><li>Weekly email report, with read-only IAM roles and all resources defined in Terraform.</li></ul></div>
+<div><h4>Target result</h4><p>A weekly report a client can act on, and the base for a fixed-price AWS account audit service.</p></div>
+</div>
+<div class="chips"><span>Lambda</span><span>Python</span><span>EventBridge</span><span>S3</span><span>SNS or SES</span><span>IAM</span><span>Terraform</span></div>
+</article>
+</section>
+
+<section id="services">
+<h2>Services</h2>
+<p class="sub">Work I can take on for startups and small businesses.</p>
+<div class="grid">
+<div class="card"><h3>AWS infrastructure setup</h3><p>EC2, ECS, EKS, VPC, IAM and RDS, written as Terraform code so it can be repeated.</p></div>
+<div class="card"><h3>CI/CD pipelines</h3><p>Automatic build, test and deploy with Jenkins or GitHub Actions.</p></div>
+<div class="card"><h3>Docker and Kubernetes</h3><p>Containerize your app and run it on ECS or EKS, with Helm and YAML manifests.</p></div>
+<div class="card"><h3>Monitoring</h3><p>Prometheus metrics and Grafana dashboards so you see problems early.</p></div>
+<div class="card"><h3>Serverless and high-availability apps</h3><p>Lambda APIs and load-balanced, auto-scaling web apps on AWS.</p></div>
+</div>
+</section>
+
+<section id="process">
+<h2>How I work</h2>
+<p class="sub">A simple process so you always know what to expect.</p>
+<ol class="steps">
+<li><b>Discuss</b><span>We agree on your goal, your current setup and a deadline.</span></li>
+<li><b>Plan</b><span>I send an architecture diagram, a timeline and an estimated monthly AWS cost.</span></li>
+<li><b>Build</b><span>Everything is created as code in Git, with regular updates.</span></li>
+<li><b>Hand over</b><span>You get documentation, access and a walkthrough.</span></li>
+</ol>
+</section>
+
+<section id="skills">
+<h2>Skills</h2>
+<p class="sub">Tools I use day to day.</p>
+<div class="grid">
+<div class="card"><h3>Cloud</h3><p>AWS: EC2, ECS, EKS, IAM, VPC, RDS</p></div>
+<div class="card"><h3>Infrastructure as Code</h3><p>Terraform, GitOps workflows</p></div>
+<div class="card"><h3>Containers</h3><p>Docker, Kubernetes, Helm</p></div>
+<div class="card"><h3>CI/CD and quality</h3><p>Jenkins, GitHub Actions, SonarQube, Nexus, Trivy</p></div>
+<div class="card"><h3>Monitoring</h3><p>Prometheus, Grafana</p></div>
+<div class="card"><h3>Databases and scripting</h3><p>MySQL, PostgreSQL, Bash, Linux and Windows</p></div>
+</div>
+</section>
+
+<section id="contact" class="cta">
+<h2>Have a project in mind?</h2>
+<p>Tell me what you need and I'll reply with a plan and an estimate.</p>
+<p><a href="mailto:kakshata2000@gmail.com">kakshata2000@gmail.com</a></p>
+<p><a href="https://www.linkedin.com/in/akshata-kamble14">linkedin.com/in/akshata-kamble14</a></p>
+<p>Languages: English, Hindi, Marathi</p>
+</section>
+</main>
+<footer><div class="wrap"><span>&copy; 2026 Akshata Kamble. Cloud and DevOps Engineer, Pune, India.</span><span><a href="mailto:kakshata2000@gmail.com">Email</a> &nbsp; <a href="https://www.linkedin.com/in/akshata-kamble14">LinkedIn</a></span></div></footer>
+</body>
+</html>
